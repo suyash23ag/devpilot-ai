@@ -1,0 +1,70 @@
+{
+  "at": "2026-10-26T13:05:33.700Z",
+  "platform": "win32",
+  "arch": "x64",
+  "node": "v24.22.1",
+  "cpu": "13th Gen Intel(R) Core(TM) i5-1335U",
+  "logicalCpus": 12,
+  "systemMemoryBytes": 16806252544,
+  "scope": "Synthetic ZIP extraction and deterministic tools in this benchmark process. Not full-system, LLM or Jetson GPU measurements.",
+  "results": [
+    {
+      "files": 100,
+      "expandedBytes": 650475,
+      "compressedBytes": 21817,
+      "indexMs": 301,
+      "securityMs": 48,
+      "qualityMs": 66,
+      "structureMs": 61,
+      "documentMs": 4,
+      "inspectedFiles": 30,
+      "fileBudget": 30,
+      "findings": 1,
+      "peakSampledRssBytes": 122036224,
+      "cpuMicroseconds": {
+        "user": 250000,
+        "system": 219000
+      }
+    },
+    {
+      "files": 500,
+      "expandedBytes": 3332869,
+      "compressedBytes": 111615,
+      "indexMs": 2516,
+      "securityMs": 218,
+      "qualityMs": 259,
+      "structureMs": 222,
+      "documentMs": 7,
+      "inspectedFiles": 30,
+      "fileBudget": 30,
+      "findings": 1,
+      "peakSampledRssBytes": 145862656,
+      "cpuMicroseconds": {
+        "user": 1078000,
+        "system": 2344000
+      }
+    },
+    {
+      "files": 1000,
+      "expandedBytes": 6685869,
+      "compressedBytes": 223920,
+      "indexMs": 6144,
+      "securityMs": 137,
+      "qualityMs": 112,
+      "structureMs": 122,
+      "documentMs": 9,
+      "inspectedFiles": 30,
+      "fileBudget": 30,
+      "findings": 1,
+      "peakSampledRssBytes": 165986304,
+      "cpuMicroseconds": {
+        "user": 1985000,
+        "system": 4797000
+      }
+    }
+  ],
+  "limits": {
+    "over1000EntriesRejected": true,
+    "fileBudgetEnforced": true
+  }
+}

@@ -1,0 +1,10 @@
+node_modules/
+frontend/dist/
+backend/workspace/
+backend/.env
+backend/.local/
+*.tsbuildinfo
+.env
+coverage/
+*.log
+.DS_Store

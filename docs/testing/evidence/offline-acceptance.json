@@ -1,0 +1,236 @@
+{
+  "at": "2026-10-26T13:10:25.134Z",
+  "status": "passed",
+  "checks": [
+    "Fresh application startup with non-loopback networking blocked",
+    "All six real-model actions, with evidence-grounded document and graph assertions",
+    "Guarded application restart, persisted project, analyses and results",
+    "Validation, active-run exclusion, cancellation and deletion"
+  ],
+  "networkPolicy": {
+    "mode": "loopback-only",
+    "allowedChecks": 13,
+    "deniedChecks": 0
+  },
+  "model": "llama3.2:1b",
+  "results": [
+    {
+      "action": "analyze",
+      "status": "completed",
+      "runId": "6adf5040f3af49d3e448465e",
+      "metadata": {
+        "inspectedFiles": [
+          "server.js",
+          "legacy.js",
+          "package.json",
+          "README.md"
+        ],
+        "totalFiles": 4,
+        "fileBudget": 30,
+        "failedFiles": [],
+        "contextTruncated": true,
+        "budgetReached": false,
+        "toolErrors": [],
+        "toolsUsed": [
+          "list_project_files",
+          "analyze_project_structure",
+          "detect_languages",
+          "analyze_package_dependencies",
+          "read_file"
+        ],
+        "durationMs": 37921,
+        "modelMs": 37791,
+        "rssBytes": 121638912,
+        "cpuMicroseconds": {
+          "user": 656000,
+          "system": 141000
+        },
+        "note": "The model summary is a draft interpretation to verify against source. Documents and graph edges use static evidence; findings are heuristic. This is not an exhaustive audit."
+      },
+      "findings": 0,
+      "hasMarkdown": false,
+      "hasArchitecture": false
+    },
+    {
+      "action": "code-review",
+      "status": "completed",
+      "runId": "6adf5067f3af49d3e4484694",
+      "metadata": {
+        "inspectedFiles": [
+          "package.json",
+          "README.md",
+          "server.js",
+          "legacy.js"
+        ],
+        "totalFiles": 4,
+        "fileBudget": 30,
+        "failedFiles": [],
+        "contextTruncated": false,
+        "budgetReached": false,
+        "toolErrors": [],
+        "toolsUsed": [
+          "list_project_files",
+          "find_potential_security_issues",
+          "find_code_quality_issues"
+        ],
+        "durationMs": 28066,
+        "modelMs": 27999,
+        "rssBytes": 123035648,
+        "cpuMicroseconds": {
+          "user": 203000,
+          "system": 31000
+        },
+        "note": "The model summary is a draft interpretation to verify against source. Documents and graph edges use static evidence; findings are heuristic. This is not an exhaustive audit."
+      },
+      "findings": 2,
+      "hasMarkdown": false,
+      "hasArchitecture": false
+    },
+    {
+      "action": "readme",
+      "status": "completed",
+      "runId": "6adf5084f3af49d3e44846bc",
+      "metadata": {
+        "inspectedFiles": [
+          "server.js",
+          "legacy.js",
+          "package.json",
+          "README.md"
+        ],
+        "totalFiles": 4,
+        "fileBudget": 30,
+        "failedFiles": [],
+        "contextTruncated": true,
+        "budgetReached": false,
+        "toolErrors": [],
+        "toolsUsed": [
+          "list_project_files",
+          "analyze_project_structure",
+          "analyze_package_dependencies",
+          "read_file",
+          "generate_documentation"
+        ],
+        "durationMs": 49017,
+        "modelMs": 48943,
+        "rssBytes": 124186624,
+        "cpuMicroseconds": {
+          "user": 172000,
+          "system": 63000
+        },
+        "note": "The model summary is a draft interpretation to verify against source. Documents and graph edges use static evidence; findings are heuristic. This is not an exhaustive audit."
+      },
+      "findings": 0,
+      "hasMarkdown": true,
+      "hasArchitecture": false
+    },
+    {
+      "action": "architecture",
+      "status": "completed",
+      "runId": "6adf50b6f3af49d3e44846f8",
+      "metadata": {
+        "inspectedFiles": [
+          "server.js",
+          "legacy.js",
+          "package.json",
+          "README.md"
+        ],
+        "totalFiles": 4,
+        "fileBudget": 30,
+        "failedFiles": [],
+        "contextTruncated": true,
+        "budgetReached": false,
+        "toolErrors": [],
+        "toolsUsed": [
+          "list_project_files",
+          "analyze_project_structure",
+          "analyze_package_dependencies",
+          "read_file"
+        ],
+        "durationMs": 64206,
+        "modelMs": 64143,
+        "rssBytes": 125247488,
+        "cpuMicroseconds": {
+          "user": 500000,
+          "system": 62000
+        },
+        "note": "The model summary is a draft interpretation to verify against source. Documents and graph edges use static evidence; findings are heuristic. This is not an exhaustive audit."
+      },
+      "findings": 0,
+      "hasMarkdown": false,
+      "hasArchitecture": true
+    },
+    {
+      "action": "documentation",
+      "status": "completed",
+      "runId": "6adf50f7f3af49d3e448473c",
+      "metadata": {
+        "inspectedFiles": [
+          "server.js",
+          "legacy.js",
+          "package.json",
+          "README.md"
+        ],
+        "totalFiles": 4,
+        "fileBudget": 30,
+        "failedFiles": [],
+        "contextTruncated": true,
+        "budgetReached": false,
+        "toolErrors": [],
+        "toolsUsed": [
+          "list_project_files",
+          "analyze_project_structure",
+          "analyze_package_dependencies",
+          "read_file",
+          "generate_documentation"
+        ],
+        "durationMs": 33076,
+        "modelMs": 33019,
+        "rssBytes": 126615552,
+        "cpuMicroseconds": {
+          "user": 93000,
+          "system": 32000
+        },
+        "note": "The model summary is a draft interpretation to verify against source. Documents and graph edges use static evidence; findings are heuristic. This is not an exhaustive audit."
+      },
+      "findings": 0,
+      "hasMarkdown": true,
+      "hasArchitecture": false
+    },
+    {
+      "action": "improvements",
+      "status": "completed",
+      "runId": "6adf5119f3af49d3e448476d",
+      "metadata": {
+        "inspectedFiles": [
+          "package.json",
+          "README.md",
+          "server.js",
+          "legacy.js"
+        ],
+        "totalFiles": 4,
+        "fileBudget": 30,
+        "failedFiles": [],
+        "contextTruncated": false,
+        "budgetReached": false,
+        "toolErrors": [],
+        "toolsUsed": [
+          "list_project_files",
+          "find_code_quality_issues",
+          "find_potential_security_issues"
+        ],
+        "durationMs": 28514,
+        "modelMs": 28468,
+        "rssBytes": 127184896,
+        "cpuMicroseconds": {
+          "user": 125000,
+          "system": 63000
+        },
+        "note": "The model summary is a draft interpretation to verify against source. Documents and graph edges use static evidence; findings are heuristic. This is not an exhaustive audit."
+      },
+      "findings": 2,
+      "hasMarkdown": false,
+      "hasArchitecture": false
+    }
+  ],
+  "scope": "Process-scoped network denial with local MongoDB and Ollama. OS internet, local daemon networking and physical Jetson operation were not disconnected or certified."
+}
